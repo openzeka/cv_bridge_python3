@@ -6,13 +6,12 @@ Jetpack 4.2 sürümünde ROS paketlerini Python3 ile kullanmak için cv_bridge k
 
 # Gereksinimler
 - ROS melodic
-- Jetpack 4.2
-
+- Jetpack 4.2 veya üstü
 # Kurulum
 
 ```bash
-sudo apt install python-catkin-tools python3-pip python3-numpy -y 
-sudo pip3 install catkin_pkg
+sudo apt install python-catkin-tools python3-pip -y 
+sudo pip3 install catkin_pkg numpy
 git clone https://github.com/openzeka/cv_bridge_python3.git && cd cv_bridge_python3
 source /opt/ros/melodic/setup.bash
 catkin config  -DPYTHON_EXECUTABLE=/usr/bin/python3 -DPYTHON_INCLUDE_DIR=/usr/include/python3.6m -DPYTHON_LIBRARY=/usr/lib/aarch64-linux-gnu/libpython3.6m.so
